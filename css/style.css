@@ -1,8 +1,8 @@
 
 /* GLOBAL */
 :root {
-  --primary: #ea625c;
-  --text-color: #333;
+  --primary: #;
+  --text-color: #;
 }
 
 
@@ -38,13 +38,7 @@ img {
 }
 /* -------------------------BUTTONS----------------------------- */
 .button {
-  padding: 12px 39px;
-  border: 0;
-  font-size: 18px;
-  font-weight: 700;
-  color: #fff;
-  text-transform: uppercase;
-  background-color: var(--button-color);
+  
 }
 
 /* CONTAINER */
@@ -52,141 +46,22 @@ img {
   width: 100%;
   max-width: 1100px;
   padding-left: 50px;
-  padding-right: 50;
+  padding-right: 50px;
   margin-right: auto;
   margin-left: auto;
 }
 
 
 /* ------------------------HEADER-------------------------- */
-.header {
-}
 
-.sitenav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 30px;
-  padding-right: 125px;
-}
 
-.sitenav__logo-link {
-  display: flex;
-}
-
-.sitenav__logo {
-  display: flex;
-}
-
-.sitenav__wrapper {
-  display: flex;
-  align-items: center;
-}
-
-.sitenav__list {
-  display: flex;
-  align-items: center;
-  padding: 0;
-  margin: 0;
-  margin-right: 40px;
-  list-style: none;
-}
-
-.sitenav__item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.sitenav__list-link {
-  font-size: 15px;
-  text-decoration: none;
-  color: #333;
-}
-
-.sitenav__support-link {
-  padding-bottom: 6px;
-  border-bottom: 1px solid #333;
-  color: #333;
-  text-decoration: none;
-}
 
 /* MAIN-CONTENT */
 .main-content {
   flex-grow: 1;
-  padding: 0;
-  margin: 0;
 }
+
 /* ---------------------------HERO-------------------------------- */
-.hero {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 80px;
-}
-
-.hero__content {
-  width: 490px;
-}
-
-.hero__heading1 {
-  margin: 0;
-  margin-bottom: 30px;
-  font-size: 50px;
-  line-height: 1.2;
-  color: #000;
-}
-
-.hero__text {
-  padding-left: 40px;
-  margin: 0;
-  margin-bottom: 30px;
-  border-left: 3px solid #888;
-  font-size: 16px;
-  color: #777;
-}
-
-.hero__img {
-  width: 587px;
-  height: 565px;
-  background-image: url('/img/intro-bg.jpg');
-  background-position: right center;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.main-content__dvider {
-  margin: 0;
-  border: 2px solid #ddd;
-}
-
-/* -----------------------------FEATURES------------------------ */
-.features {
-  padding-top: 70px;
-  padding-bottom: 70px;
-}
-
-.features__list {
-  display: flex;
-  /* justify-content: space-between; */
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.features__item {
-  width: 280px;
-}
-
-.features__item:not(:last-child) {
-  margin-right: 80px;
-}
-.features__heading3 {
-}
-.features__info {
-}
-.features__more {
-}
-
-
 
 
 
@@ -199,6 +74,6 @@ only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
   .hero__img {
-    background-image: url('/img/intro-bg@2x.jpg');
+    background-image: url('');
   }
 }
