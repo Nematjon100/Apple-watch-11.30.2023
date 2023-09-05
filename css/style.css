@@ -2,7 +2,10 @@
 /* GLOBAL */
 :root {
   --primary: #;
+  --font-size: 16px;
   --text-color: #;
+  --bg-color: #;
+  --font-family: 'Roboto', 'Arial', sans-serif;
 }
 
 
@@ -24,11 +27,11 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: 'Roboto', sans-serif;
-  font-size: 15px;
+  font-family: var(--font-family);
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
-  background-color: #fff;
+  background-color: var(--bg-color);
   color: var(--text-color);
 }
 
@@ -36,9 +39,9 @@ img {
   max-width: 100%;
   height: auto;
 }
-/* -------------------------BUTTONS----------------------------- */
+/* -----BUTTONS-----*/
 .button {
-  
+
 }
 
 /* CONTAINER */
@@ -52,7 +55,7 @@ img {
 }
 
 
-/* ------------------------HEADER-------------------------- */
+/*-----HEADER------ */
 
 
 
@@ -61,7 +64,7 @@ img {
   flex-grow: 1;
 }
 
-/* ---------------------------HERO-------------------------------- */
+/* ----HERO----*/
 
 
 
