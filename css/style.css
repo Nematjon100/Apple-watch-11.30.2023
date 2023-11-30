@@ -1,11 +1,10 @@
 
+
 /* GLOBAL */
 :root {
-  --primary: #;
-  --font-size: 16px;
-  --text-color: #;
-  --bg-color: #;
-  --font-family: 'Roboto', 'Arial', sans-serif;
+  --primary: #EA625C;
+  --font-size: 15px;
+  --text-color: #333;
 }
 
 
@@ -27,11 +26,11 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: var(--font-family);
-  font-size: 16px;
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-size: 15px;
   line-height: 1.5;
   font-weight: 400;
-  background-color: var(--bg-color);
+  background-color: #fff;
   color: var(--text-color);
 }
 
@@ -55,7 +54,6 @@ img {
 }
 
 
-/*-----HEADER------ */
 
 
 
@@ -64,8 +62,133 @@ img {
   flex-grow: 1;
 }
 
-/* ----HERO----*/
 
+/*-----HEADER------ */
+.header {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  margin-right: auto;
+  transition: opacity 0.3s ease;
+}
+
+.header-logo:hover {
+  opacity: 0.8;
+}
+
+.header-logo:active {
+  opacity: 0.6;
+}
+
+.logo-img {
+  display: block;
+  width: 35px;
+  height: 42px;
+  object-fit: contain;
+}
+
+
+/* SITENAV */
+.sitenav {
+  margin-right: 40px;
+}
+
+.sitenav-list {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  margin-right: 40px;
+  font-size: var(--font-size);
+  list-style: none;
+}
+
+.sitenav-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.sitenav-link {
+  display: block;
+  padding-top: 6px;
+  padding-bottom: 3px;
+  border-bottom: 3px solid transparent;
+  color: var(--text-color);
+  text-decoration: none;
+  transition: border-bottom 0.3s ease;
+}
+
+.sitenav-link:hover {
+  border-bottom: 3px solid #333;
+
+}
+
+
+/* SEARCH-FORM */
+.search-form {
+}
+
+.search-form-input {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border: 0;
+  border-bottom: 1px solid #333;
+}
+
+/* ----HERO----*/
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 80px;
+}
+
+.hero-content {
+  width: 490px;
+}
+
+.hero-heading {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 50px;
+  line-height: 1.2;
+  color: #000;
+  font-weight: 700;
+}
+
+.hero-text {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 16px;
+  color: #777;
+  line-height: 1.5;
+}
+
+.hero-link {
+  display: inline-block;
+  padding: 12px 39px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #EA625C;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.hero-img-wrapper {
+  margin-left: 145px;
+}
+
+.hero-img {
+  display: flex;
+}
 
 
 /* -------------------------RETINA DISPLAY------------------------ */
