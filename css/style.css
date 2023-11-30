@@ -3,6 +3,7 @@
 /* GLOBAL */
 :root {
   --primary: #EA625C;
+  --primary-dark: #C9514C;
   --font-size: 15px;
   --text-color: #333;
 }
@@ -56,8 +57,49 @@ img {
 }
 
 
+/* BUTTON */
+.button {
+  display: inline-block;
+  padding: 12px 39px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #EA625C;
+  text-decoration: none;
+  text-transform: uppercase;
+}
 
+.button:hover {
+  background-color: var(--primary-dark);
+}
 
+.button:active {
+  opacity: 0.8;
+}
+
+.lined-link {
+  display: inline-flex;
+  align-items: center;
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #EA625C;
+}
+
+.lined-link::before {
+  content: "";
+  width: 40px;
+  height: 3px;
+  margin-right: 10px;
+  background-color: var(--primary);
+  transition: width 0.3s ease;
+}
+
+.lined-link:hover::before {
+  width: 60px;
+}
 
 /* MAIN-CONTENT */
 .main-content {
@@ -178,24 +220,53 @@ img {
   line-height: 1.5;
 }
 
-.button {
-  display: inline-block;
-  padding: 12px 39px;
+
+
+/* FEATURES */
+.features {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.features-list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.features-item:not(:last-child) {
+  margin-right: 80px;
+}
+
+.features-item {
+  width: 280px;
+}
+
+.features-heading {
+  margin-top: 0;
+  margin-bottom: 30px;
   font-size: 18px;
-  font-weight: 700;
-  color: #fff;
-  background-color: #EA625C;
-  text-decoration: none;
+  color: #222;
   text-transform: uppercase;
 }
 
-.hero-img-wrapper {
-  margin-left: 145px;
+.features-text {
+  margin-top: 0;
+  margin-bottom: 20px;
+  line-height: 1.6;
 }
 
-.hero-img {
-  display: flex;
+.features-divider {
+  width: 8px;
+  height: 8px;
+  margin: 0;
+  border: 0;
+  background-color: #ddd;
+  box-shadow: 18px 0 0 0 #ddd,
+  36px 0 #ddd;
 }
+
 
 
 /* -------------------------RETINA DISPLAY------------------------ */
