@@ -38,10 +38,12 @@ img {
   max-width: 100%;
   height: auto;
 }
-/* -----BUTTONS-----*/
-.button {
 
+*:focus {
+  outline: 2px dashed var(--primary);
+  outline-offset: 2px;
 }
+
 
 /* CONTAINER */
 .container {
@@ -143,35 +145,40 @@ img {
 
 /* ----HERO----*/
 .hero {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 80px;
+  padding-top: 140px;
+  padding-bottom: 185px;
+  border-bottom: 3px solid #ddd;
+  background-image: url("../img/intro-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: calc(50% + 545px);
 }
 
-.hero-content {
-  width: 490px;
+
+/* LEAD-CTA */
+.lead-cta {
+  width: 100%;
+  max-width: 490px;
 }
 
-.hero-heading {
-  display: flex;
+.lead-cta-heading {
   margin-top: 0;
   margin-bottom: 30px;
   font-size: 50px;
   line-height: 1.2;
   color: #000;
-  font-weight: 700;
 }
 
-.hero-text {
+.lead-cta-text {
+  padding-left: 37px;
   margin-top: 0;
   margin-bottom: 30px;
+  border-left: 3px solid #888;
   font-size: 16px;
   color: #777;
   line-height: 1.5;
 }
 
-.hero-link {
+.button {
   display: inline-block;
   padding: 12px 39px;
   font-size: 18px;
@@ -199,7 +206,7 @@ only screen and (     -o-min-device-pixel-ratio: 2/1),
 only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
-  .hero__img {
-    background-image: url('');
+  .hero {
+    background-image: url('../img/intro-bg@2x.jpg');
   }
 }
