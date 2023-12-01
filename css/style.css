@@ -60,10 +60,12 @@ img {
 /* BUTTON */
 .button {
   display: inline-block;
+  min-width: 260px;
   padding: 12px 39px;
   font-size: 18px;
   font-weight: 700;
   color: #fff;
+  text-align: center;
   background-color: #EA625C;
   text-decoration: none;
   text-transform: uppercase;
@@ -268,6 +270,50 @@ img {
 }
 
 
+/* PROMO */
+.promo {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.promo-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.promo-img {
+  width: 400px;
+  height: 600px;
+  object-fit: cover;
+}
+
+
+/* RUNNERS */
+.runners {
+  padding-top: 240px;
+  padding-bottom: 240px;
+  background-image: url("../img/runners.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  object-fit: cover;
+  /* background-attachment: fixed; */
+  background-size: 1250px 830px;
+}
+
+.lead-cta--white {
+  margin-left: auto;
+}
+
+.lead-cta--white .lead-cta-heading{
+  color:#fff;
+}
+
+.lead-cta--white .lead-cta-text{
+  border-color: #fff;
+  color:#fff;
+}
+
 
 /* -------------------------RETINA DISPLAY------------------------ */
 @media
@@ -279,5 +325,8 @@ only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
   .hero {
     background-image: url('../img/intro-bg@2x.jpg');
+  }
+  .runners {
+    background-image: url('../img/runners@2x.jpg');
   }
 }
